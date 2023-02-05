@@ -9,6 +9,7 @@ A simple demo project of the Pinia state management system using Vue 2.
 npm install pinia
 ```
 
+If using Vue 2:
 ```
 npm install @vue/composition-api
 ```
