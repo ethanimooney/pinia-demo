@@ -1,6 +1,21 @@
-# pinia-demo
+# Pinia Demo
 
-## Project setup
+A simple demo project of the Pinia state management system using Vue 2.
+
+
+## Pinia Install
+
+```
+npm install pinia
+```
+
+```
+npm install @vue/composition-api
+```
+
+
+
+## Want to Copy this Demo? Follow this instead:
 ```
 npm install
 ```
@@ -10,15 +25,8 @@ npm install
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## Useful Links:
 
-### Lints and fixes files
-```
-npm run lint
-```
+[Pinia Docs](https://pinia.vuejs.org/)
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+[Pinia Presentation Slides and PDF](https://www.figma.com/file/xfWGHUBDELsPvrhnZJx4h5/Pinia-Tech-Talk?node-id=0%3A1&t=t17ldlcD2086XtmF-1)
