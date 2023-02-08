@@ -24,11 +24,6 @@ export const useEventStore = defineStore("event", {
         return state.eventsList.find((event) => event.eventId === eventId);
       };
     },
-    getLoginUser: (state) => {
-      return state.eventsList.find(
-        (event) => event.eventId === state.loginUser
-      );
-    },
   },
   actions: {
     addEvent(event) {
@@ -38,17 +33,6 @@ export const useEventStore = defineStore("event", {
       this.eventsList = this.eventsList.filter(
         (event) => event.eventId !== eventId
       );
-    },
-    computeEventUsername(eventId) {
-      this.eventsList
-        .find((event) => event.eventId === eventId)
-        .email.split("@")[0];
-    },
-    setLoginUser(eventId) {
-      this.loginUser = eventId;
-    },
-    removeLoginUser() {
-      this.loginUser = "";
     },
   },
 });

@@ -1,5 +1,17 @@
 <template>
-  <div>Student name: {{ eventsStore.getEventForEventId("1550316") }}</div>
+  <div>
+    <strong> Actions Test: computeStudentUsername(1550316): </strong>
+    <br />
+    {{ studentsStore.computeStudentUsername(1550316) }}
+    <br />
+    <br />
+    <strong> Test: getStudentsList: </strong>
+    <div>{{ studentsStore.getStudentsList }}</div>
+    <br />
+    <br />
+    <strong> with Parameter Test: getStudentForStudentId(1550316): </strong>
+    <div>{{ studentsStore.getStudentForStudentId(1550316) }}</div>
+  </div>
 </template>
 
 <script>
@@ -10,10 +22,8 @@
 
   export default {
     name: "HomeComponent",
-    props: {
-      studentStore: mapStores(useStudentStore()),
-      eventsStore: mapStores(useEventStore()),
+    computed: {
+      ...mapStores(useStudentStore, useEventStore),
     },
-    computed: {},
   };
 </script>
